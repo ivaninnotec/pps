@@ -5,6 +5,8 @@ services:
                 build: ./docker/apache
                 links:
                   - php
+                  - mysql
+                  - mongo
                 ports:
                   - "80:80"
         php:
