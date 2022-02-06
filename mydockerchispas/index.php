@@ -1,0 +1,3 @@
+<? php
+Hola desde PHP
+?>
