@@ -14,12 +14,12 @@ services:
         image: sonarqube:lts-community
         ports:
          - "9000:9000"
-        environment:
-            SONARQUBE_USERNAME: pps
-            SONARQUBE_PASSWORD: pps
+        volumes:
+         - sonarqubeData:/opt/sonarqube/data
         networks:
          - cicd
 networks:
   cicd:
 volumes:
   jenkins_home:
+  sonarqubeData:
